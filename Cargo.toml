@@ -1,0 +1,7 @@
+[package]
+name = "algorithm"
+version = "0.1.0"
+authors = ["zhangzhonghua"]
+
+[dependencies]
+rand = "0.3"
