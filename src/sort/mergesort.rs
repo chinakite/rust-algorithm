@@ -7,7 +7,9 @@ pub fn mergesort<T>(arr: &mut [T]) where T: Ord + Copy {
 
     let len = arr.len();
     let mut tmp_arr:Vec<T> = Vec::with_capacity(len);
-    unsafe { tmp_arr.set_len(len); }
+    unsafe {
+        tmp_arr.set_len(len);
+    }
 
     sort_helper(arr, 0, (len-1), &mut tmp_arr, |a,b| a.cmp(b));
 }
